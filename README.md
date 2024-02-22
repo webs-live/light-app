@@ -708,7 +708,7 @@ export default function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
 
 - resolve： 当使用文件系统路径的别名时，请始终使用绝对路径。相对路径的别名值会原封不动地被使用，因此无法被正常解析。
 
-![img](https://gitee.com/lzdjack-docs/assets/raw/master/light-app-path)
+![img](https://gitee.com/lzdjack-docs/assets/raw/master/fde502dc-49ae-4c95-a5a8-e7c273dfc5a5.png)
 
 > 比如在 tsconfig.json 添加了路径别名，那么在 vite.config.ts 文件就要做解析
 
@@ -1001,6 +1001,6 @@ export default defineApplicationConfig({
 
 ![img](https://gitee.com/lzdjack-docs/assets/raw/master/8f59c46c-785b-45d2-9208-b49f5c0b2a85.png)
 
-> 上图为什么没有引用 scss 工具类就能使用呢？因为我们在 vitejs 中添加了全局共享 scss 属性，所以可以在任何.> vue 文件中使用
+> 上图为什么没有引用 scss 工具类就能使用呢？因为我们在 vitejs 中添加了全局共享 scss 属性，所以可以在任何.vue 文件中使用
 
 ![img](https://gitee.com/lzdjack-docs/assets/raw/master/d80a230d-6c88-4d70-b0f0-95fff8cce674.png)
