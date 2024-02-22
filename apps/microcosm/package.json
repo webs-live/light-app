@@ -1,0 +1,32 @@
+{
+  "name": "microcosm",
+  "version": "0.0.0",
+  "private": true,
+  "description": "时光缩影",
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "cross-env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=8192 pnpm vite build",
+    "build:analyze": "cross-env NODE_OPTIONS=--max-old-space-size=8192 pnpm vite build --mode analyze",
+    "build:no-cache": "pnpm clean:cache && npm run build",
+    "build:test": "cross-env NODE_ENV=test NODE_OPTIONS=--max-old-space-size=8192 pnpm vite build",
+    "dev": "pnpm vite --mode development",
+    "format": "prettier --write src/",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "preview": "npm run build && vite preview",
+    "preview:test": "npm run build:test && vite preview"
+  },
+  "dependencies": {
+    "@app/bs-ui": "workspace:*",
+    "@app/hooks": "workspace:*",
+    "@app/service": "workspace:*",
+    "@app/shared": "workspace:*",
+    "@app/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@app/eslint": "workspace:*",
+    "@app/prettier": "workspace:*",
+    "@app/ts": "workspace:*",
+    "@app/vite": "workspace:*",
+    "vite-plugin-mock": "3.0.0"
+  }
+}

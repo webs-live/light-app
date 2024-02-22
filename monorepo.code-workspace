@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "name": "microcosm",
+      "path": "apps/microcosm"
+    },
+    {
+      "name": "@app/hooks",
+      "path": "packages/hooks"
+    },
+    {
+      "name": "@app/shared",
+      "path": "packages/shared"
+    },
+    {
+      "name": "@app/ui",
+      "path": "packages/ui"
+    },
+    {
+      "name": "@app/bs-ui",
+      "path": "packages/bs-ui"
+    },
+    {
+      "name": "@app/design",
+      "path": "packages/design"
+    },
+    {
+      "name": "@app/service",
+      "path": "packages/service"
+    },
+    {
+      "name": "root",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}
